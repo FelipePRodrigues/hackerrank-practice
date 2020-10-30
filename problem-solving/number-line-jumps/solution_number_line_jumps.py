@@ -15,26 +15,3 @@ def kangaroo(x1, v1, x2, v2):
         impossibleToReach = longerJumper == kangarooAhead
 
     return 'NO'
-
-
-tests = [
-    {
-        'input': [0, 3, 4, 2],
-        'output': 'YES',
-    },
-    {
-        'input': [0, 2, 5, 3],
-        'output': 'NO'
-    }
-]
-
-for test in tests:
-    input = test['input']
-    output = test['output']
-    result = kangaroo(
-        input[0], input[1], input[2], input[3])
-
-    if result == output:
-        print('Passed')
-    else:
-        print('Failed -> ' + str(result) + ' - ' + str(output))
