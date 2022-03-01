@@ -1,27 +1,3 @@
-# def appendAndDelete(s, t, k):
-#     equal_size = 0
-
-#     for letter_idx in range(len(desired)):
-#         try:
-#             if t[letter_idx] == s[letter_idx]:
-#                 equal_size += 1
-#             else:
-#                 break
-#         except:
-#             break
-
-#     if k == (len(s) + len(desired) - equal_size * 2):
-#         return "Yes"
-
-#     if k > len(s) + len(desired):
-#         return "Yes"
-
-#     if k % (len(desired) - len(s)) == 0:
-#         return "Yes"
-
-#     return "No"
-
-
 def appendAndDelete(initial, desired, operations):
     c = 0
     length = len(initial)
